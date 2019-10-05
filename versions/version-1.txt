@@ -26,3 +26,7 @@ log(v:1.0.5, 05.10.2019)
     - Загрузил services.min.js;
     - Сделал сетку на grid.min.js на странице homePage и newsPage для блоков lastNewsBlock и allNewsBlock;
     - Подправил работу алгоритма который отображает и скрывает пункты меню;
+log(v:1.0.6, 06.10.2019)
+    - Сверстал страницу ourEventsPage;
+    - Подключил прелоадер к ourEventsPage и активировал его на newsPage(так как оказывается он был закоментирован);
+    - Изменил стили lastNewsBlock'a, allNewsBlock'a и ourEventsBlock'a;

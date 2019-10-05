@@ -340,7 +340,6 @@ button {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  background: #8a8989;
   margin: 80px 0;
 }
 
@@ -375,7 +374,7 @@ button {
 }
 
 .allNewsBlock__newsCards__heading {
-  color: #cecbcb;
+  color: #ee2222;
   font-size: 24px;
   padding-bottom: 5px;
   border-bottom: dashed 2px orange;

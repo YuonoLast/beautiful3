@@ -332,20 +332,25 @@ button {
   background-color: #000000;
 }
 
-.helloBlock {
-  width: 100%;
-  height: 600px;
-  background-size: 100% 100%;
-  background: #3F1B2C;
-  background: linear-gradient(310deg, #242323, #525252);
+.ourEventsBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 80px 0;
 }
 
-.helloBlock__heading-mixin {
-  font-size: 30px;
-  z-index: 10;
+.ourEventsBlock__heading-1 {
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background: green;
 }
 
-.helloBlock__headingWrapper {
+.ourEventsBlock__cardsArea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -359,94 +364,49 @@ button {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  height: 100%;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.521);
-}
-
-.helloBlock__heading:nth-child(1) {
-  font-size: 30px;
-  z-index: 10;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  color: white;
-  background: rgba(0, 26, 255, 0.226);
-  padding: 20px;
-  width: 50%;
-  border-radius: 35px;
-  opacity: 0;
-}
-
-.helloBlock__heading:nth-child(2) {
-  font-size: 30px;
-  z-index: 10;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  color: white;
-  background: rgba(146, 32, 180, 0.5);
-  padding: 20px;
-  width: 40%;
-  border-radius: 35px;
-  opacity: 0;
-}
-
-.lastNewsBlock {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  width: 90%;
   margin: 30px 0;
+  margin-left: 5%;
+  padding-bottom: 40px;
 }
 
-.lastNewsBlock__heading-1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-  background: #9220b4;
-  padding: 10px 0;
+.ourEventsBlock__newsCards__heading {
+  font-size: 24px;
+  padding-bottom: 5px;
+  border-bottom: dashed 2px orange;
+  color: #ff2828;
 }
 
-.lastNewsBlock__cdArea {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  height: 60%;
-  width: 100%;
+.ourEventsBlock__newsCards__description {
+  color: white;
+  width: 70%;
+  text-indent: 10px;
+  margin: 20px 0;
+  text-align: center;
 }
 
-.lastNewsBlock__cdArea__newsCards {
+.ourEventsBlock__newsCards__button {
+  color: #cecbcb;
+  border: orange solid 1px;
+  border-radius: 10px;
+  background: none;
+  font-size: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.ourEventsBlock__newsCards__button:hover {
+  border-radius: 0px;
+  color: white;
+  background: orange;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.ourEventsBlock__newsCards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -461,95 +421,10 @@ button {
   -ms-flex-direction: column;
   flex-direction: column;
   width: 300px;
-  margin: 40px 15px;
-  background: #e3e3e3;
-}
-
-.lastNewsBlock__cdArea__newsCards__picCards {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  height: 100px;
-  width: 100%;
-  margin-bottom: 30px;
-  background-color: red;
-}
-
-.pic_lastNewsCard-AttackOnTheTitans1 {
-  background: url('../img/pic/lastNews/attackOnTheTitans-1.png') no-repeat;
-  background-size: 100% auto;
-  background-position: center center;
-}
-
-.pic_lastNewsCard-AttackOnTheTitansAnime1 {
-  background: url('../img/pic/lastNews/attackOnTheTitanAnime-1.jpg') no-repeat;
-  background-size: 100% auto;
-  background-position: top center;
-}
-
-.pic_lastNewsCard-AttackOnTheTitansManga1 {
-  background: url('../img/pic/lastNews/attackOnTheTitansManga-1.jpg') no-repeat;
-  background-size: 100% auto;
-  background-position: bottom center;
-}
-
-.pic_lastNewsCard-Slipknot1 {
-  background: url('../img/pic/lastNews/slipknot-1.png') no-repeat;
-  background-size: 100% auto;
-  background-position: top center;
-}
-
-.pic_lastNewsCard-BreakingBad1 {
-  background: url('../img/pic/lastNews/breakingBad-1.jpg') no-repeat;
-  background-size: 100% auto;
-  background-position: center center;
-}
-
-.pic_lastNewsCard-ramiMalek1 {
-  background: url('../img/pic/lastNews/ramiMalek-1.png') no-repeat;
-  background-size: 100% auto;
-  background-position: top center;
-}
-
-.pic_lastNewsCard-avatar1 {
-  background: url('../img/pic/lastNews/avatar-1.png') no-repeat;
-  background-size: 100% auto;
-  background-position: center center;
-}
-
-.pic_lastNewsCard-samuraiJack1 {
-  background: url('../img/pic/lastNews/samuraiJack-1.png') no-repeat;
-  background-size: 100% auto;
-  background-position: center center;
-}
-
-.pic_lastNewsCard-UK1 {
-  background: url('../img/pic/lastNews/UK-1.jpg') no-repeat;
-  background-size: 100% auto;
-  background-position: center center;
-}
-
-.lastNewsBlock__cdArea__newsCards__hdCards {
-  margin-bottom: 18px;
-}
-
-.lastNewsBlock__cdArea__newsCards__dsCards {
-  margin-bottom: 30px;
-  width: 90%;
-}
-
-.lastNewsBlock__cdArea__newsCards__btnCards {
-  margin-bottom: 20px;
-  padding: 10px 50px;
-  border: solid 1px #706d6d;
-  background: #f1951b;
-  cursor: pointer;
+  background: rgba(31, 30, 30, 0.911);
+  padding: 20px 0;
+  margin: 0 30px;
+  margin-top: 40px;
 }
 
 .row-1 {
@@ -594,12 +469,14 @@ button {
 
 .filler-cards-2 {
   width: 300px;
-  margin: 40px 15px;
+  margin: 0 30px;
+  margin-top: 30px;
 }
 
 .filler-cards-3 {
   width: 300px;
-  margin: 40px 15px;
+  margin: 0 30px;
+  margin-top: 30px;
 }
 
 .footer {
@@ -766,6 +643,13 @@ button {
   animation-timing-function: linear;
 }
 
+@media (min-width: 768px) {
+  .ourEventsBlock {
+    width: 94%;
+    margin-left: 3%;
+  }
+}
+
 @media (min-width: 1024px) {
   .header {
     -webkit-box-orient: horizontal;
@@ -793,50 +677,55 @@ button {
     height: 70px;
   }
 
-  .lastNewsBlock {
-    width: 70%;
-    margin-left: 15%;
+  .ourEventsBlock {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .ourEventsBlock__cardsArea {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .ourEventsBlock__newsCards {
+    width: 300px;
+    height: 300px;
+    margin: 0 30px;
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .ourEventsBlock__cardsArea {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 2000px) {
+  .ourEventsBlock {
+    width: 80%;
+    margin-left: 10%;
+  }
+}
+
+@media (min-width: 2561px) {
+  .ourEventsBlock {
+    width: 60%;
+    margin-left: 20%;
   }
 }
 
 @media (max-width: 1023px) {
   .header__navSite__effect {
     display: none;
-  }
-}
-
-@media (min-width: 320px) and (max-width: 767px) {
-  .helloBlock__heading:nth-child(1) {
-    padding: 15px;
-    width: 80%;
-  }
-
-  .helloBlock__heading:nth-child(2) {
-    padding: 15px;
-    width: 70%;
-  }
-}
-
-@media (min-height: 501px) and (max-height: 680px) {
-  .helloBlock {
-    height: 530px;
-  }
-}
-
-@media (min-height: 681px) and (max-height: 950px) {
-  .helloBlock {
-    height: 800px;
-  }
-}
-
-@media (min-height: 681px) and (max-height: 800px) {
-  .helloBlock {
-    height: 800px;
-  }
-}
-
-@media (min-height: 801px) and (max-height: 930px) {
-  .helloBlock {
-    height: 880px;
   }
 }
